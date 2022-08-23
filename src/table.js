@@ -11,7 +11,7 @@ export const Table = ({
 }) => {
 	return (
 		<table
-			className={cn}
+			className={isHoriziontal ? `${cn} ${cn}-horizonal` : cn}
 			aria-labelledby={idCaption}
 			aria-describedby={idSummary}
 		>

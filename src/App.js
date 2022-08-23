@@ -30,13 +30,7 @@ function App() {
 
 	return (
 		<div className='App'>
-			<header className='App-header'>
-				<TableLite
-					cn={'table-lite'}
-					isHoriziontal={true}
-					data={data}
-				/>
-			</header>
+			<TableLite cn={'table-lite'} isHoriziontal data={data} />
 		</div>
 	);
 }

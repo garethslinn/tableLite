@@ -1,4 +1,4 @@
-body {
+.App {
   margin: 2em;
 }
 
@@ -27,4 +27,8 @@ table th,
 table td {
   padding: .5em;
   border: 1px solid lightgrey;
+}
+
+.table-lite-horizonal th {
+  text-align: left;
 }
