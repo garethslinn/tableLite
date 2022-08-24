@@ -20,6 +20,11 @@ table th {
   color: #000;
   background: #ccc;
 }
+
+table th.blank-header {
+  background-color: #fff;
+}
+
 table caption {
   padding:.5em;
 }
@@ -28,6 +33,8 @@ table td {
   padding: .5em;
   border: 1px solid lightgrey;
 }
+
+
 
 .table-lite-horizonal th {
   text-align: left;

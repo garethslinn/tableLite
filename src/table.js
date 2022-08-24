@@ -15,15 +15,17 @@ export const Table = ({
 			aria-labelledby={idCaption}
 			aria-describedby={idSummary}
 		>
-			{!isHoriziontal && (
-				<thead>
-					<tr>
-						{data.header.map((item, index) => {
-							return <th>{item}</th>;
-						})}
-					</tr>
-				</thead>
-			)}
+			{data?.type === 'double' ||
+				(!isHoriziontal && (
+					<thead>
+						<tr>
+							{data?.type === 2 && <th className='blank-header'></th>}
+							{data.header.map((item, index) => {
+								return <th>{item}</th>;
+							})}
+						</tr>
+					</thead>
+				))}
 
 			<tbody>
 				{data?.body.map((item, index) => {
@@ -33,7 +35,7 @@ export const Table = ({
 								<th>{data.header[index]}</th>
 							)}
 							{Object.values(item).map((value) => {
-								return <td>{value}</td>;
+								return <td>{value + index}</td>;
 							})}
 						</tr>
 					);
@@ -43,30 +45,6 @@ export const Table = ({
 	);
 };
 
-// eslint-disable-next-line no-lone-blocks
-{
-	/* <h2>horizontal</h2>
-			<table>
-				<tr>
-					<th>Date</th>
-					<td>12 February</td>
-					<td>24 March</td>
-					<td>14 April</td>
-				</tr>
-				<tr>
-					<th>Event</th>
-					<td>Waltz with Strauss</td>
-					<td>The Obelisks</td>
-					<td>The What</td>
-				</tr>
-				<tr>
-					<th>Venue</th>
-					<td>Main Hall</td>
-					<td>West Wing</td>
-					<td>Main Hall</td>
-				</tr>
-			</table> */
-}
 // eslint-disable-next-line no-lone-blocks
 {
 	/* // 

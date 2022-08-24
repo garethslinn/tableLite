@@ -5,7 +5,8 @@ import { TableLite } from './tableLite';
 function App() {
 	const data = {
 		header: ['Date Joined', 'Event', 'Value'],
-		type: 'standard',
+		// header: ['Date Joined', 'Event'],
+		type: 1, // standard, double
 		caption: 'This is a caption',
 		summary:
 			'It was popularised in the 1960s with the release of versions of Lorem Ipsum.',

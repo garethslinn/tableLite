@@ -8,8 +8,8 @@ export const TableLite = ({
 	isHoriziontal = false,
 	cn = null,
 }) => {
-	const idCaption = Math.random().toString(36).slice(2);
-	const idSummary = Math.random().toString(25).slice(2);
+	const idCaption = `cpation-${Math.random().toString(36).slice(2)}`;
+	const idSummary = `summary-${Math.random().toString(36).slice(2)}`;
 	return (
 		<>
 			{data?.caption || data?.summary ? (
