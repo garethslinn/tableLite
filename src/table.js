@@ -15,7 +15,7 @@ export const Table = ({
 			aria-labelledby={idCaption}
 			aria-describedby={idSummary}
 		>
-			{data?.type === 'double' ||
+			{!data?.type === 2 ||
 				(!isHoriziontal && (
 					<thead>
 						<tr>

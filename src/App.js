@@ -6,7 +6,7 @@ function App() {
 	const data = {
 		header: ['Date Joined', 'Event', 'Value'],
 		// header: ['Date Joined', 'Event'],
-		type: 1, // standard, double
+		type: 1, // 1 standard, 2 double
 		caption: 'This is a caption',
 		summary:
 			'It was popularised in the 1960s with the release of versions of Lorem Ipsum.',
@@ -31,7 +31,7 @@ function App() {
 
 	return (
 		<div className='App'>
-			<TableLite cn={'table-lite'} isHoriziontal data={data} />
+			<TableLite cn={'table-lite'} isHoriziontalx data={data} />
 		</div>
 	);
 }
